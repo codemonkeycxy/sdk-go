@@ -1,4 +1,4 @@
-module go.temporal.io/codemonkeycxy/sdk
+module github.com/codemonkeycxy/sdk-go
 
 go 1.16
 
