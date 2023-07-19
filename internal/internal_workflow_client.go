@@ -1642,6 +1642,7 @@ func (w *workflowClientInterceptor) SignalWithStartWorkflow(
 		SearchAttributes:         searchAttr,
 		WorkflowIdReusePolicy:    in.Options.WorkflowIDReusePolicy,
 		Header:                   header,
+		SkipGenerateWorkflowTask: in.Options.SkipGenerateWorkflowTask,
 	}
 
 	var response *workflowservice.SignalWithStartWorkflowExecutionResponse

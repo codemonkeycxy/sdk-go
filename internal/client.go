@@ -596,6 +596,8 @@ type (
 		// supported when Temporal server is using ElasticSearch). The key and value type must be registered on Temporal server side.
 		// Use GetSearchAttributes API to get valid key and corresponding value type.
 		SearchAttributes map[string]interface{}
+
+		SkipGenerateWorkflowTask bool
 	}
 
 	// RetryPolicy defines the retry policy.
