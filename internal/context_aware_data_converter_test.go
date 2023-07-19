@@ -30,7 +30,7 @@ import (
 	"fmt"
 	"testing"
 
-	"go.temporal.io/sdk/converter"
+	"github.com/codemonkeycxy/sdk-go/converter"
 
 	"github.com/stretchr/testify/require"
 	commonpb "go.temporal.io/api/common/v1"

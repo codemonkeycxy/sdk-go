@@ -29,9 +29,9 @@ import (
 	"testing"
 	"time"
 
+	"github.com/codemonkeycxy/sdk-go/internal/common/retry"
 	"github.com/stretchr/testify/assert"
 	"go.temporal.io/api/serviceerror"
-	"go.temporal.io/sdk/internal/common/retry"
 )
 
 type someError struct{}

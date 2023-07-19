@@ -32,8 +32,8 @@
 package internalbindings
 
 import (
+	"github.com/codemonkeycxy/sdk-go/internal"
 	commonpb "go.temporal.io/api/common/v1"
-	"go.temporal.io/sdk/internal"
 )
 
 type (

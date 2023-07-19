@@ -27,7 +27,7 @@ package workflow
 import (
 	"time"
 
-	"go.temporal.io/sdk/internal"
+	"github.com/codemonkeycxy/sdk-go/internal"
 )
 
 type (
@@ -65,16 +65,19 @@ type (
 // Returns CanceledError if the ctx is canceled.
 // The following code is going to block until the captured count
 // variable is set to 5:
-//   workflow.Await(ctx, func() bool {
-//       return count == 5
-//   })
+//
+//	workflow.Await(ctx, func() bool {
+//	    return count == 5
+//	})
 //
 // The trigger is evaluated on every workflow state transition.
 // Note that conditions that wait for time can be error-prone as nothing might cause evaluation.
 // For example:
-//   workflow.Await(ctx, func() bool {
-//       return workflow.Now() > someTime
-//   })
+//
+//	workflow.Await(ctx, func() bool {
+//	    return workflow.Now() > someTime
+//	})
+//
 // might never return true unless some other event like Signal or activity completion would force the condition evaluation.
 // For a time-based wait use workflow.AwaitWithTimeout function.
 func Await(ctx Context, condition func() bool) error {
@@ -88,9 +91,9 @@ func Await(ctx Context, condition func() bool) error {
 // The following code is going to block until the captured count
 // variable is set to 5 or one hour passes.
 //
-// workflow.AwaitWithTimeout(ctx, time.Hour, func() bool {
-//   return count == 5
-// })
+//	workflow.AwaitWithTimeout(ctx, time.Hour, func() bool {
+//	  return count == 5
+//	})
 func AwaitWithTimeout(ctx Context, timeout time.Duration, condition func() bool) (ok bool, err error) {
 	return internal.AwaitWithTimeout(ctx, timeout, condition)
 }

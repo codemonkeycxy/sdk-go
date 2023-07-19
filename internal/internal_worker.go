@@ -52,12 +52,12 @@ import (
 	"go.temporal.io/api/workflowservice/v1"
 	"go.temporal.io/api/workflowservicemock/v1"
 
-	"go.temporal.io/sdk/converter"
-	"go.temporal.io/sdk/internal/common/metrics"
-	"go.temporal.io/sdk/internal/common/serializer"
-	"go.temporal.io/sdk/internal/common/util"
-	ilog "go.temporal.io/sdk/internal/log"
-	"go.temporal.io/sdk/log"
+	"github.com/codemonkeycxy/sdk-go/converter"
+	"github.com/codemonkeycxy/sdk-go/internal/common/metrics"
+	"github.com/codemonkeycxy/sdk-go/internal/common/serializer"
+	"github.com/codemonkeycxy/sdk-go/internal/common/util"
+	ilog "github.com/codemonkeycxy/sdk-go/internal/log"
+	"github.com/codemonkeycxy/sdk-go/log"
 )
 
 const (

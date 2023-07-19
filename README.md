@@ -25,7 +25,7 @@ Although the Go SDK does not support most third-party logging solutions natively
 package main
 import (
 	"github.com/sirupsen/logrus"
-	"go.temporal.io/sdk/client"
+	"github.com/codemonkeycxy/sdk-go/client"
 	logrusadapter "logur.dev/adapter/logrus"
 	"logur.dev/logur"
 )

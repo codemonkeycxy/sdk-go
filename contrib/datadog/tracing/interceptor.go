@@ -34,9 +34,9 @@ import (
 	"gopkg.in/DataDog/dd-trace-go.v1/ddtrace"
 	"gopkg.in/DataDog/dd-trace-go.v1/ddtrace/tracer"
 
-	"go.temporal.io/sdk/interceptor"
-	"go.temporal.io/sdk/log"
-	"go.temporal.io/sdk/workflow"
+	"github.com/codemonkeycxy/sdk-go/interceptor"
+	"github.com/codemonkeycxy/sdk-go/log"
+	"github.com/codemonkeycxy/sdk-go/workflow"
 )
 
 // TracerOptions are options provided to NewInterceptor

@@ -29,16 +29,16 @@ import (
 	"reflect"
 	"testing"
 
+	"github.com/codemonkeycxy/sdk-go/client"
+	"github.com/codemonkeycxy/sdk-go/converter"
+	"github.com/codemonkeycxy/sdk-go/internal"
+	ilog "github.com/codemonkeycxy/sdk-go/internal/log"
+	"github.com/codemonkeycxy/sdk-go/worker"
 	"github.com/golang/mock/gomock"
 	"github.com/stretchr/testify/require"
 	"github.com/stretchr/testify/suite"
 	commonpb "go.temporal.io/api/common/v1"
 	"go.temporal.io/api/workflowservicemock/v1"
-	"go.temporal.io/sdk/client"
-	"go.temporal.io/sdk/converter"
-	"go.temporal.io/sdk/internal"
-	ilog "go.temporal.io/sdk/internal/log"
-	"go.temporal.io/sdk/worker"
 )
 
 type replayTestSuite struct {

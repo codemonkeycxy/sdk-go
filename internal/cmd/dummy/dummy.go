@@ -26,14 +26,14 @@
 package main
 
 import (
-	_ "go.temporal.io/sdk/activity"
-	_ "go.temporal.io/sdk/client"
-	_ "go.temporal.io/sdk/converter"
-	_ "go.temporal.io/sdk/log"
-	_ "go.temporal.io/sdk/temporal"
-	_ "go.temporal.io/sdk/testsuite"
-	_ "go.temporal.io/sdk/worker"
-	_ "go.temporal.io/sdk/workflow"
+	_ "github.com/codemonkeycxy/sdk-go/activity"
+	_ "github.com/codemonkeycxy/sdk-go/client"
+	_ "github.com/codemonkeycxy/sdk-go/converter"
+	_ "github.com/codemonkeycxy/sdk-go/log"
+	_ "github.com/codemonkeycxy/sdk-go/temporal"
+	_ "github.com/codemonkeycxy/sdk-go/testsuite"
+	_ "github.com/codemonkeycxy/sdk-go/worker"
+	_ "github.com/codemonkeycxy/sdk-go/workflow"
 )
 
 func main() {

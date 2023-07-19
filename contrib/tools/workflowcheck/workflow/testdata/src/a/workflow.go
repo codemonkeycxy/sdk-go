@@ -4,8 +4,8 @@ import (
 	"text/template"
 	"time"
 
-	"go.temporal.io/sdk/worker"
-	"go.temporal.io/sdk/workflow"
+	"github.com/codemonkeycxy/sdk-go/worker"
+	"github.com/codemonkeycxy/sdk-go/workflow"
 )
 
 func PrepWorkflow() {

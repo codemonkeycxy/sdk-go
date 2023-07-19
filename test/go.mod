@@ -1,4 +1,4 @@
-module go.temporal.io/sdk/test
+module github.com/codemonkeycxy/sdk-go/test
 
 go 1.16
 
@@ -13,16 +13,16 @@ require (
 	go.opentelemetry.io/otel/trace v1.2.0
 	go.temporal.io/api v1.21.0
 	go.temporal.io/sdk v1.12.0
-	go.temporal.io/sdk/contrib/opentelemetry v0.1.0
-	go.temporal.io/sdk/contrib/opentracing v0.0.0-00010101000000-000000000000
-	go.temporal.io/sdk/contrib/tally v0.1.0
+	github.com/codemonkeycxy/sdk-go/contrib/opentelemetry v0.1.0
+	github.com/codemonkeycxy/sdk-go/contrib/opentracing v0.0.0-00010101000000-000000000000
+	github.com/codemonkeycxy/sdk-go/contrib/tally v0.1.0
 	go.uber.org/goleak v1.1.11
 	google.golang.org/grpc v1.55.0
 )
 
 replace (
 	go.temporal.io/sdk => ../
-	go.temporal.io/sdk/contrib/opentelemetry => ../contrib/opentelemetry
-	go.temporal.io/sdk/contrib/opentracing => ../contrib/opentracing
-	go.temporal.io/sdk/contrib/tally => ../contrib/tally
+	github.com/codemonkeycxy/sdk-go/contrib/opentelemetry => ../contrib/opentelemetry
+	github.com/codemonkeycxy/sdk-go/contrib/opentracing => ../contrib/opentracing
+	github.com/codemonkeycxy/sdk-go/contrib/tally => ../contrib/tally
 )

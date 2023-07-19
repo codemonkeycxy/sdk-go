@@ -27,8 +27,8 @@ import (
 	"sync"
 	"time"
 
+	"github.com/codemonkeycxy/sdk-go/converter"
 	commonpb "go.temporal.io/api/common/v1"
-	"go.temporal.io/sdk/converter"
 )
 
 type deadlockDetector struct {

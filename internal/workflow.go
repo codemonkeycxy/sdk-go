@@ -35,9 +35,9 @@ import (
 	enumspb "go.temporal.io/api/enums/v1"
 	failurepb "go.temporal.io/api/failure/v1"
 
-	"go.temporal.io/sdk/converter"
-	"go.temporal.io/sdk/internal/common/metrics"
-	"go.temporal.io/sdk/log"
+	"github.com/codemonkeycxy/sdk-go/converter"
+	"github.com/codemonkeycxy/sdk-go/internal/common/metrics"
+	"github.com/codemonkeycxy/sdk-go/log"
 )
 
 var (

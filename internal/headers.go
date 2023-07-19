@@ -27,7 +27,7 @@ package internal
 import (
 	"context"
 
-	"go.temporal.io/sdk/converter"
+	"github.com/codemonkeycxy/sdk-go/converter"
 
 	commonpb "go.temporal.io/api/common/v1"
 )

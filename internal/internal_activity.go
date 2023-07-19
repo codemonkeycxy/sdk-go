@@ -35,9 +35,9 @@ import (
 
 	commonpb "go.temporal.io/api/common/v1"
 
-	"go.temporal.io/sdk/converter"
-	"go.temporal.io/sdk/internal/common/metrics"
-	"go.temporal.io/sdk/log"
+	"github.com/codemonkeycxy/sdk-go/converter"
+	"github.com/codemonkeycxy/sdk-go/internal/common/metrics"
+	"github.com/codemonkeycxy/sdk-go/log"
 )
 
 type (

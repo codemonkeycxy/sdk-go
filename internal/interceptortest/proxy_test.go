@@ -27,13 +27,13 @@ import (
 	"testing"
 	"time"
 
+	"github.com/codemonkeycxy/sdk-go/activity"
+	"github.com/codemonkeycxy/sdk-go/interceptor"
+	"github.com/codemonkeycxy/sdk-go/internal/interceptortest"
+	"github.com/codemonkeycxy/sdk-go/testsuite"
+	"github.com/codemonkeycxy/sdk-go/worker"
+	"github.com/codemonkeycxy/sdk-go/workflow"
 	"github.com/stretchr/testify/require"
-	"go.temporal.io/sdk/activity"
-	"go.temporal.io/sdk/interceptor"
-	"go.temporal.io/sdk/internal/interceptortest"
-	"go.temporal.io/sdk/testsuite"
-	"go.temporal.io/sdk/worker"
-	"go.temporal.io/sdk/workflow"
 )
 
 func TestProxy(t *testing.T) {

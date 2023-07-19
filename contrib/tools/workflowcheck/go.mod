@@ -1,4 +1,4 @@
-module go.temporal.io/sdk/contrib/tools/workflowcheck
+module github.com/codemonkeycxy/sdk-go/contrib/tools/workflowcheck
 
 go 1.16
 

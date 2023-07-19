@@ -29,7 +29,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"go.temporal.io/sdk/log"
+	"github.com/codemonkeycxy/sdk-go/log"
 )
 
 func TestMemoryLogger_With(t *testing.T) {

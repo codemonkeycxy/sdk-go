@@ -37,9 +37,9 @@ import (
 	protocolpb "go.temporal.io/api/protocol/v1"
 	updatepb "go.temporal.io/api/update/v1"
 
-	"go.temporal.io/sdk/converter"
-	iconverter "go.temporal.io/sdk/internal/converter"
-	"go.temporal.io/sdk/internal/protocol"
+	"github.com/codemonkeycxy/sdk-go/converter"
+	iconverter "github.com/codemonkeycxy/sdk-go/internal/converter"
+	"github.com/codemonkeycxy/sdk-go/internal/protocol"
 )
 
 type mockWorkflowDefinition struct {

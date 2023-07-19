@@ -38,10 +38,10 @@ import (
 	uberatomic "go.uber.org/atomic"
 	"google.golang.org/grpc"
 
-	"go.temporal.io/sdk/converter"
-	"go.temporal.io/sdk/internal/common/metrics"
-	ilog "go.temporal.io/sdk/internal/log"
-	"go.temporal.io/sdk/log"
+	"github.com/codemonkeycxy/sdk-go/converter"
+	"github.com/codemonkeycxy/sdk-go/internal/common/metrics"
+	ilog "github.com/codemonkeycxy/sdk-go/internal/log"
+	"github.com/codemonkeycxy/sdk-go/log"
 )
 
 const (

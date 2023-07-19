@@ -29,13 +29,13 @@ import (
 	"fmt"
 	"reflect"
 
+	"github.com/codemonkeycxy/sdk-go/converter"
+	"github.com/codemonkeycxy/sdk-go/internal/protocol"
 	"github.com/gogo/protobuf/types"
 	commonpb "go.temporal.io/api/common/v1"
 	historypb "go.temporal.io/api/history/v1"
 	protocolpb "go.temporal.io/api/protocol/v1"
 	updatepb "go.temporal.io/api/update/v1"
-	"go.temporal.io/sdk/converter"
-	"go.temporal.io/sdk/internal/protocol"
 )
 
 type updateState string

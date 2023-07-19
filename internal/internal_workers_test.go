@@ -41,9 +41,9 @@ import (
 	"go.temporal.io/api/workflowservicemock/v1"
 	"google.golang.org/grpc"
 
-	"go.temporal.io/sdk/converter"
-	"go.temporal.io/sdk/internal/common"
-	ilog "go.temporal.io/sdk/internal/log"
+	"github.com/codemonkeycxy/sdk-go/converter"
+	"github.com/codemonkeycxy/sdk-go/internal/common"
+	ilog "github.com/codemonkeycxy/sdk-go/internal/log"
 )
 
 // ActivityTaskHandler never returns response

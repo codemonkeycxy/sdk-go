@@ -32,10 +32,10 @@ import (
 	"strings"
 	"testing"
 
+	"github.com/codemonkeycxy/sdk-go/converter"
 	"github.com/gogo/protobuf/proto"
 	"github.com/stretchr/testify/require"
 	commonpb "go.temporal.io/api/common/v1"
-	"go.temporal.io/sdk/converter"
 )
 
 func ExampleCodecDataConverter_compression() {

@@ -30,9 +30,9 @@ import (
 	"go.opentelemetry.io/otel/sdk/trace/tracetest"
 	"go.opentelemetry.io/otel/trace"
 
-	"go.temporal.io/sdk/contrib/opentelemetry"
-	"go.temporal.io/sdk/interceptor"
-	"go.temporal.io/sdk/internal/interceptortest"
+	"github.com/codemonkeycxy/sdk-go/contrib/opentelemetry"
+	"github.com/codemonkeycxy/sdk-go/interceptor"
+	"github.com/codemonkeycxy/sdk-go/internal/interceptortest"
 )
 
 func TestSpanPropagation(t *testing.T) {

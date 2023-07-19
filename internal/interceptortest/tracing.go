@@ -30,10 +30,10 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"go.temporal.io/sdk/interceptor"
-	"go.temporal.io/sdk/testsuite"
-	"go.temporal.io/sdk/worker"
-	"go.temporal.io/sdk/workflow"
+	"github.com/codemonkeycxy/sdk-go/interceptor"
+	"github.com/codemonkeycxy/sdk-go/testsuite"
+	"github.com/codemonkeycxy/sdk-go/worker"
+	"github.com/codemonkeycxy/sdk-go/workflow"
 )
 
 var testWorkflowStartTime = time.Date(1969, 7, 20, 20, 17, 0, 0, time.UTC)

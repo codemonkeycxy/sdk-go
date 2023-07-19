@@ -28,8 +28,8 @@ import (
 	"testing"
 	"time"
 
+	"github.com/codemonkeycxy/sdk-go/internal/common/retry"
 	"github.com/stretchr/testify/assert"
-	"go.temporal.io/sdk/internal/common/retry"
 )
 
 type TestClock struct {

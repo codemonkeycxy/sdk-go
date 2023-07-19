@@ -41,9 +41,9 @@ import (
 	"go.temporal.io/api/serviceerror"
 	uberatomic "go.uber.org/atomic"
 
-	"go.temporal.io/sdk/converter"
-	iconverter "go.temporal.io/sdk/internal/converter"
-	ilog "go.temporal.io/sdk/internal/log"
+	"github.com/codemonkeycxy/sdk-go/converter"
+	iconverter "github.com/codemonkeycxy/sdk-go/internal/converter"
+	ilog "github.com/codemonkeycxy/sdk-go/internal/log"
 )
 
 type WorkflowTestSuiteUnitTest struct {

@@ -35,7 +35,7 @@ import (
 	enumspb "go.temporal.io/api/enums/v1"
 	failurepb "go.temporal.io/api/failure/v1"
 
-	"go.temporal.io/sdk/converter"
+	"github.com/codemonkeycxy/sdk-go/converter"
 )
 
 /*

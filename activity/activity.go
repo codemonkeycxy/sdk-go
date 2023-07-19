@@ -27,9 +27,9 @@ package activity
 import (
 	"context"
 
-	"go.temporal.io/sdk/internal"
-	"go.temporal.io/sdk/internal/common/metrics"
-	"go.temporal.io/sdk/log"
+	"github.com/codemonkeycxy/sdk-go/internal"
+	"github.com/codemonkeycxy/sdk-go/internal/common/metrics"
+	"github.com/codemonkeycxy/sdk-go/log"
 )
 
 type (

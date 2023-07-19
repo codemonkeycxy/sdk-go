@@ -28,12 +28,12 @@ import (
 	"errors"
 	"testing"
 
+	"github.com/codemonkeycxy/sdk-go/internal/protocol"
 	"github.com/gogo/protobuf/proto"
 	"github.com/gogo/protobuf/types"
 	"github.com/stretchr/testify/require"
 	protocolpb "go.temporal.io/api/protocol/v1"
 	updatepb "go.temporal.io/api/update/v1"
-	"go.temporal.io/sdk/internal/protocol"
 )
 
 func TestNameFromMessage(t *testing.T) {

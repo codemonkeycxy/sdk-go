@@ -48,14 +48,14 @@ import (
 	taskqueuepb "go.temporal.io/api/taskqueue/v1"
 	"go.temporal.io/api/workflowservice/v1"
 
-	"go.temporal.io/sdk/internal/common/retry"
-	"go.temporal.io/sdk/internal/protocol"
+	"github.com/codemonkeycxy/sdk-go/internal/common/retry"
+	"github.com/codemonkeycxy/sdk-go/internal/protocol"
 
-	"go.temporal.io/sdk/converter"
-	"go.temporal.io/sdk/internal/common"
-	"go.temporal.io/sdk/internal/common/metrics"
-	"go.temporal.io/sdk/internal/common/util"
-	"go.temporal.io/sdk/log"
+	"github.com/codemonkeycxy/sdk-go/converter"
+	"github.com/codemonkeycxy/sdk-go/internal/common"
+	"github.com/codemonkeycxy/sdk-go/internal/common/metrics"
+	"github.com/codemonkeycxy/sdk-go/internal/common/util"
+	"github.com/codemonkeycxy/sdk-go/log"
 )
 
 const (

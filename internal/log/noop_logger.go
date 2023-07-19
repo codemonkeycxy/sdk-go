@@ -25,7 +25,7 @@
 package log
 
 import (
-	"go.temporal.io/sdk/log"
+	"github.com/codemonkeycxy/sdk-go/log"
 )
 
 // NoopLogger is Logger implementation that doesn't produce any logs.

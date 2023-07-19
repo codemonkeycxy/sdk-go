@@ -33,7 +33,7 @@ import (
 	"go.opentelemetry.io/otel/propagation"
 	"go.opentelemetry.io/otel/trace"
 
-	"go.temporal.io/sdk/interceptor"
+	"github.com/codemonkeycxy/sdk-go/interceptor"
 )
 
 // DefaultTextMapPropagator is the default OpenTelemetry TextMapPropagator used

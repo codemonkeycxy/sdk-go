@@ -1,8 +1,8 @@
 package worker
 
 import (
-	"go.temporal.io/sdk/activity"
-	"go.temporal.io/sdk/workflow"
+	"github.com/codemonkeycxy/sdk-go/activity"
+	"github.com/codemonkeycxy/sdk-go/workflow"
 )
 
 type Worker interface {

@@ -29,8 +29,8 @@ import (
 	"strings"
 	"sync"
 
-	ilog "go.temporal.io/sdk/internal/log"
-	"go.temporal.io/sdk/log"
+	ilog "github.com/codemonkeycxy/sdk-go/internal/log"
+	"github.com/codemonkeycxy/sdk-go/log"
 )
 
 const FailAllAttempts = -1

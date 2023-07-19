@@ -1,4 +1,4 @@
-module go.temporal.io/sdk/contrib/opentelemetry
+module github.com/codemonkeycxy/sdk-go/contrib/opentelemetry
 
 go 1.16
 

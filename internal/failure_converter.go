@@ -25,10 +25,10 @@ package internal
 import (
 	"errors"
 
+	"github.com/codemonkeycxy/sdk-go/converter"
 	"github.com/gogo/protobuf/proto"
 	commonpb "go.temporal.io/api/common/v1"
 	failurepb "go.temporal.io/api/failure/v1"
-	"go.temporal.io/sdk/converter"
 )
 
 var defaultFailureConverter = NewDefaultFailureConverter(DefaultFailureConverterOptions{})

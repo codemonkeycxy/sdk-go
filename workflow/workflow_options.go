@@ -27,9 +27,9 @@ package workflow
 import (
 	"time"
 
-	"go.temporal.io/sdk/converter"
-	"go.temporal.io/sdk/internal"
-	"go.temporal.io/sdk/temporal"
+	"github.com/codemonkeycxy/sdk-go/converter"
+	"github.com/codemonkeycxy/sdk-go/internal"
+	"github.com/codemonkeycxy/sdk-go/temporal"
 )
 
 // WithChildOptions adds all workflow options to the context.

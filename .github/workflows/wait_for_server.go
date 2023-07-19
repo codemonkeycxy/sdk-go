@@ -26,7 +26,7 @@ import (
 	"log"
 	"time"
 
-	"go.temporal.io/sdk/client"
+	"github.com/codemonkeycxy/sdk-go/client"
 )
 
 func main() {

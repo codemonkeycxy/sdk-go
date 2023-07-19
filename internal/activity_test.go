@@ -30,11 +30,11 @@ import (
 	"testing"
 	"time"
 
+	"github.com/codemonkeycxy/sdk-go/internal/common/metrics"
 	"github.com/golang/mock/gomock"
 	"github.com/stretchr/testify/require"
 	"github.com/stretchr/testify/suite"
 	"go.temporal.io/api/serviceerror"
-	"go.temporal.io/sdk/internal/common/metrics"
 	"google.golang.org/grpc"
 
 	"go.temporal.io/api/workflowservice/v1"

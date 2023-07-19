@@ -31,7 +31,7 @@ import (
 	"regexp"
 	"strings"
 
-	"go.temporal.io/sdk/contrib/tools/workflowcheck/determinism"
+	"github.com/codemonkeycxy/sdk-go/contrib/tools/workflowcheck/determinism"
 	"golang.org/x/tools/go/analysis"
 	"golang.org/x/tools/go/types/typeutil"
 	"gopkg.in/yaml.v2"
@@ -42,10 +42,10 @@ import (
 var DefaultIdentRefs = determinism.DefaultIdentRefs.Clone().SetAll(determinism.IdentRefs{
 	// Reported as non-deterministic because it internally starts a goroutine, so
 	// mark deterministic explicitly
-	"go.temporal.io/sdk/internal.propagateCancel": false,
+	"github.com/codemonkeycxy/sdk-go/internal.propagateCancel": false,
 	// Reported as non-deterministic because it iterates over a map, so mark
 	// deterministic explicitly
-	"(*go.temporal.io/sdk/internal.cancelCtx).cancel": false,
+	"(*github.com/codemonkeycxy/sdk-go/internal.cancelCtx).cancel": false,
 })
 
 // Config is config for NewChecker.
@@ -140,7 +140,7 @@ func (c *Checker) Run(pass *analysis.Pass) error {
 
 	// If it's the workflow package, we assume the entire package is deterministic
 	// so we don't run a pass on it
-	if pass.Pkg.Path() == "go.temporal.io/sdk/workflow" {
+	if pass.Pkg.Path() == "github.com/codemonkeycxy/sdk-go/workflow" {
 		return nil
 	}
 
@@ -171,8 +171,8 @@ func (c *Checker) Run(pass *analysis.Pass) error {
 			}
 			// Callee needs to be workflow registry
 			callee, _ := typeutil.Callee(pass.TypesInfo, callExpr).(*types.Func)
-			const regName = "(go.temporal.io/sdk/worker.WorkflowRegistry).RegisterWorkflow"
-			const regOptName = "(go.temporal.io/sdk/worker.WorkflowRegistry).RegisterWorkflowWithOptions"
+			const regName = "(github.com/codemonkeycxy/sdk-go/worker.WorkflowRegistry).RegisterWorkflow"
+			const regOptName = "(github.com/codemonkeycxy/sdk-go/worker.WorkflowRegistry).RegisterWorkflowWithOptions"
 			if callee == nil || len(callExpr.Args) == 0 || (callee.FullName() != regName && callee.FullName() != regOptName) {
 				return true
 			}

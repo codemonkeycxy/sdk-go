@@ -39,9 +39,9 @@ import (
 	"github.com/stretchr/testify/require"
 	"github.com/stretchr/testify/suite"
 
-	"go.temporal.io/sdk/converter"
-	"go.temporal.io/sdk/internal/common/metrics"
-	ilog "go.temporal.io/sdk/internal/log"
+	"github.com/codemonkeycxy/sdk-go/converter"
+	"github.com/codemonkeycxy/sdk-go/internal/common/metrics"
+	ilog "github.com/codemonkeycxy/sdk-go/internal/log"
 )
 
 type WorkflowUnitTest struct {
@@ -280,7 +280,7 @@ func TestWorkflowPanic(t *testing.T) {
 	require.True(t, errors.As(err, &resultErr))
 
 	require.EqualValues(t, "simulated", resultErr.Error())
-	require.Contains(t, resultErr.StackTrace(), "go.temporal.io/sdk/internal.splitJoinActivityWorkflow")
+	require.Contains(t, resultErr.StackTrace(), "github.com/codemonkeycxy/sdk-go/internal.splitJoinActivityWorkflow")
 }
 
 func TestWorkflowReturnsPanic(t *testing.T) {
@@ -1280,7 +1280,7 @@ func (s *WorkflowUnitTest) Test_waitGroupNegativeCounterPanicsWorkflowTest() {
 	s.True(errors.As(err, &resultErr))
 
 	s.EqualValues("negative WaitGroup counter", resultErr.Error())
-	s.Contains(resultErr.StackTrace(), "go.temporal.io/sdk/internal.waitGroupNegativeCounterPanicsWorkflowTest")
+	s.Contains(resultErr.StackTrace(), "github.com/codemonkeycxy/sdk-go/internal.waitGroupNegativeCounterPanicsWorkflowTest")
 }
 
 func (s *WorkflowUnitTest) Test_WaitGroupMultipleConcurrentWaitsPanicsWorkflowTest() {
@@ -1300,7 +1300,7 @@ func (s *WorkflowUnitTest) Test_WaitGroupMultipleConcurrentWaitsPanicsWorkflowTe
 	s.True(errors.As(err, &resultErr))
 
 	s.EqualValues("WaitGroup is reused before previous Wait has returned", resultErr.Error())
-	s.Contains(resultErr.StackTrace(), "go.temporal.io/sdk/internal.waitGroupMultipleConcurrentWaitsPanicsWorkflowTest")
+	s.Contains(resultErr.StackTrace(), "github.com/codemonkeycxy/sdk-go/internal.waitGroupMultipleConcurrentWaitsPanicsWorkflowTest")
 }
 
 func (s *WorkflowUnitTest) Test_WaitGroupMultipleWaitsWorkflowTest() {

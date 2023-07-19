@@ -31,13 +31,13 @@ import (
 	"sync"
 	"time"
 
-	"go.temporal.io/sdk/activity"
-	"go.temporal.io/sdk/client"
-	"go.temporal.io/sdk/converter"
-	"go.temporal.io/sdk/interceptor"
-	"go.temporal.io/sdk/internal/common/metrics"
-	"go.temporal.io/sdk/log"
-	"go.temporal.io/sdk/workflow"
+	"github.com/codemonkeycxy/sdk-go/activity"
+	"github.com/codemonkeycxy/sdk-go/client"
+	"github.com/codemonkeycxy/sdk-go/converter"
+	"github.com/codemonkeycxy/sdk-go/interceptor"
+	"github.com/codemonkeycxy/sdk-go/internal/common/metrics"
+	"github.com/codemonkeycxy/sdk-go/log"
+	"github.com/codemonkeycxy/sdk-go/workflow"
 )
 
 // ProxyCall represents a call made to the proxy interceptor.

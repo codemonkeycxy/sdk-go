@@ -51,25 +51,25 @@ import (
 	"go.uber.org/goleak"
 	"google.golang.org/grpc"
 
-	"go.temporal.io/sdk/contrib/opentelemetry"
-	sdkopentracing "go.temporal.io/sdk/contrib/opentracing"
-	"go.temporal.io/sdk/converter"
-	"go.temporal.io/sdk/test"
+	"github.com/codemonkeycxy/sdk-go/contrib/opentelemetry"
+	sdkopentracing "github.com/codemonkeycxy/sdk-go/contrib/opentracing"
+	"github.com/codemonkeycxy/sdk-go/converter"
+	"github.com/codemonkeycxy/sdk-go/test"
 
 	historypb "go.temporal.io/api/history/v1"
 
-	"go.temporal.io/sdk/activity"
-	"go.temporal.io/sdk/client"
-	contribtally "go.temporal.io/sdk/contrib/tally"
-	"go.temporal.io/sdk/interceptor"
-	"go.temporal.io/sdk/internal"
-	"go.temporal.io/sdk/internal/common"
-	"go.temporal.io/sdk/internal/common/metrics"
-	"go.temporal.io/sdk/internal/interceptortest"
-	ilog "go.temporal.io/sdk/internal/log"
-	"go.temporal.io/sdk/temporal"
-	"go.temporal.io/sdk/worker"
-	"go.temporal.io/sdk/workflow"
+	"github.com/codemonkeycxy/sdk-go/activity"
+	"github.com/codemonkeycxy/sdk-go/client"
+	contribtally "github.com/codemonkeycxy/sdk-go/contrib/tally"
+	"github.com/codemonkeycxy/sdk-go/interceptor"
+	"github.com/codemonkeycxy/sdk-go/internal"
+	"github.com/codemonkeycxy/sdk-go/internal/common"
+	"github.com/codemonkeycxy/sdk-go/internal/common/metrics"
+	"github.com/codemonkeycxy/sdk-go/internal/interceptortest"
+	ilog "github.com/codemonkeycxy/sdk-go/internal/log"
+	"github.com/codemonkeycxy/sdk-go/temporal"
+	"github.com/codemonkeycxy/sdk-go/worker"
+	"github.com/codemonkeycxy/sdk-go/workflow"
 )
 
 const (
@@ -127,7 +127,7 @@ func (ts *IntegrationTestSuite) TearDownSuite() {
 			ts.FailNow("leaks timed out but no error, should be impossible")
 		case <-time.After(time.Second):
 			// https://github.com/temporalio/go-sdk/issues/51
-			last = goleak.Find(goleak.IgnoreTopFunction("go.temporal.io/sdk/internal.(*coroutineState).initialYield"))
+			last = goleak.Find(goleak.IgnoreTopFunction("github.com/codemonkeycxy/sdk-go/internal.(*coroutineState).initialYield"))
 			if last == nil {
 				// no leak, done waiting
 				return
@@ -601,7 +601,7 @@ func (ts *IntegrationTestSuite) TestStackTraceQuery() {
 	ts.NotNil(value)
 	var trace string
 	ts.Nil(value.Get(&trace))
-	ts.True(strings.Contains(trace, "go.temporal.io/sdk/test_test.(*Workflows).Basic"), trace)
+	ts.True(strings.Contains(trace, "github.com/codemonkeycxy/sdk-go/test_test.(*Workflows).Basic"), trace)
 }
 
 func (ts *IntegrationTestSuite) TestConsistentQuery() {

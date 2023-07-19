@@ -35,8 +35,8 @@ import (
 	"syscall"
 	"time"
 
-	"go.temporal.io/sdk/internal/common/metrics"
-	"go.temporal.io/sdk/internal/common/retry"
+	"github.com/codemonkeycxy/sdk-go/internal/common/metrics"
+	"github.com/codemonkeycxy/sdk-go/internal/common/retry"
 	"google.golang.org/grpc/metadata"
 )
 

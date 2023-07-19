@@ -38,8 +38,8 @@ import (
 	"go.temporal.io/api/workflowservice/v1"
 	"go.temporal.io/api/workflowservicemock/v1"
 
-	"go.temporal.io/sdk/converter"
-	ilog "go.temporal.io/sdk/internal/log"
+	"github.com/codemonkeycxy/sdk-go/converter"
+	ilog "github.com/codemonkeycxy/sdk-go/internal/log"
 )
 
 const (

@@ -31,11 +31,11 @@ import (
 	historypb "go.temporal.io/api/history/v1"
 	"go.temporal.io/api/workflowservice/v1"
 
-	"go.temporal.io/sdk/activity"
-	"go.temporal.io/sdk/client"
-	"go.temporal.io/sdk/internal"
-	"go.temporal.io/sdk/log"
-	"go.temporal.io/sdk/workflow"
+	"github.com/codemonkeycxy/sdk-go/activity"
+	"github.com/codemonkeycxy/sdk-go/client"
+	"github.com/codemonkeycxy/sdk-go/internal"
+	"github.com/codemonkeycxy/sdk-go/log"
+	"github.com/codemonkeycxy/sdk-go/workflow"
 )
 
 type (

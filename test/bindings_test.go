@@ -28,11 +28,11 @@ import (
 	"context"
 	"testing"
 
+	"github.com/codemonkeycxy/sdk-go/client"
+	"github.com/codemonkeycxy/sdk-go/worker"
+	"github.com/codemonkeycxy/sdk-go/workflow"
 	"github.com/stretchr/testify/require"
 	"github.com/stretchr/testify/suite"
-	"go.temporal.io/sdk/client"
-	"go.temporal.io/sdk/worker"
-	"go.temporal.io/sdk/workflow"
 )
 
 type AsyncBindingsTestSuite struct {

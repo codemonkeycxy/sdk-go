@@ -27,9 +27,9 @@ import (
 	"testing"
 	"time"
 
+	"github.com/codemonkeycxy/sdk-go/converter"
 	"github.com/stretchr/testify/require"
 	commonpb "go.temporal.io/api/common/v1"
-	"go.temporal.io/sdk/converter"
 )
 
 func TestDeadlockDetector(t *testing.T) {

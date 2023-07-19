@@ -25,7 +25,7 @@
 package workflow
 
 import (
-	"go.temporal.io/sdk/internal"
+	"github.com/codemonkeycxy/sdk-go/internal"
 )
 
 type (

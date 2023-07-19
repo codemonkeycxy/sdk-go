@@ -26,8 +26,8 @@ import (
 	"context"
 	"testing"
 
-	"go.temporal.io/sdk/interceptor"
-	"go.temporal.io/sdk/internal/interceptortest"
+	"github.com/codemonkeycxy/sdk-go/interceptor"
+	"github.com/codemonkeycxy/sdk-go/internal/interceptortest"
 )
 
 type testTracer struct {

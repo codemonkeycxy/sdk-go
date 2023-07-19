@@ -49,10 +49,10 @@ import (
 	"go.temporal.io/api/workflowservicemock/v1"
 	"google.golang.org/grpc"
 
-	"go.temporal.io/sdk/converter"
-	iconverter "go.temporal.io/sdk/internal/converter"
-	ilog "go.temporal.io/sdk/internal/log"
-	"go.temporal.io/sdk/log"
+	"github.com/codemonkeycxy/sdk-go/converter"
+	iconverter "github.com/codemonkeycxy/sdk-go/internal/converter"
+	ilog "github.com/codemonkeycxy/sdk-go/internal/log"
+	"github.com/codemonkeycxy/sdk-go/log"
 )
 
 func testInternalWorkerRegister(r *registry) {
@@ -1356,7 +1356,7 @@ func (s *internalWorkerTestSuite) TestReplayWorkflowHistory_LocalActivity_Activi
 	result, _ := converter.GetDefaultDataConverter().ToPayloads("some-incorrect-result")
 	testEvents := []*historypb.HistoryEvent{
 		createTestEventWorkflowExecutionStarted(1, &historypb.WorkflowExecutionStartedEventAttributes{
-			WorkflowType: &commonpb.WorkflowType{Name: "go.temporal.io/sdk/internal.testReplayWorkflow"},
+			WorkflowType: &commonpb.WorkflowType{Name: "github.com/codemonkeycxy/sdk-go/internal.testReplayWorkflow"},
 			TaskQueue:    &taskqueuepb.TaskQueue{Name: taskQueue},
 			Input:        testEncodeFunctionArgs(converter.GetDefaultDataConverter()),
 		}),

@@ -26,7 +26,7 @@ import (
 	"regexp"
 	"testing"
 
-	"go.temporal.io/sdk/contrib/tools/workflowcheck/determinism"
+	"github.com/codemonkeycxy/sdk-go/contrib/tools/workflowcheck/determinism"
 	"golang.org/x/tools/go/analysis/analysistest"
 )
 

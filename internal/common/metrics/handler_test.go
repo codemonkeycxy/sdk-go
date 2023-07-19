@@ -26,8 +26,8 @@ import (
 	"testing"
 	"time"
 
+	"github.com/codemonkeycxy/sdk-go/internal/common/metrics"
 	"github.com/stretchr/testify/require"
-	"go.temporal.io/sdk/internal/common/metrics"
 )
 
 func TestReplayAwareHandler(t *testing.T) {

@@ -29,7 +29,7 @@ import (
 
 	"github.com/opentracing/opentracing-go"
 
-	"go.temporal.io/sdk/interceptor"
+	"github.com/codemonkeycxy/sdk-go/interceptor"
 )
 
 // TracerOptions are options provided to NewInterceptor or NewTracer.

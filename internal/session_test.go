@@ -34,7 +34,7 @@ import (
 	"github.com/stretchr/testify/require"
 	"github.com/stretchr/testify/suite"
 
-	"go.temporal.io/sdk/converter"
+	"github.com/codemonkeycxy/sdk-go/converter"
 )
 
 type SessionTestSuite struct {

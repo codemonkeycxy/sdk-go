@@ -38,12 +38,12 @@ import (
 	"go.temporal.io/api/serviceerror"
 	"golang.org/x/time/rate"
 
-	"go.temporal.io/sdk/internal/common/retry"
+	"github.com/codemonkeycxy/sdk-go/internal/common/retry"
 
-	"go.temporal.io/sdk/converter"
-	"go.temporal.io/sdk/internal/common/backoff"
-	"go.temporal.io/sdk/internal/common/metrics"
-	"go.temporal.io/sdk/log"
+	"github.com/codemonkeycxy/sdk-go/converter"
+	"github.com/codemonkeycxy/sdk-go/internal/common/backoff"
+	"github.com/codemonkeycxy/sdk-go/internal/common/metrics"
+	"github.com/codemonkeycxy/sdk-go/log"
 )
 
 const (

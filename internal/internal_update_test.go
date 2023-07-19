@@ -29,6 +29,8 @@ import (
 	"reflect"
 	"testing"
 
+	"github.com/codemonkeycxy/sdk-go/converter"
+	"github.com/codemonkeycxy/sdk-go/internal/protocol"
 	"github.com/gogo/protobuf/types"
 	"github.com/stretchr/testify/require"
 	commonpb "go.temporal.io/api/common/v1"
@@ -36,8 +38,6 @@ import (
 	protocolpb "go.temporal.io/api/protocol/v1"
 	updatepb "go.temporal.io/api/update/v1"
 	"go.temporal.io/api/workflowservice/v1"
-	"go.temporal.io/sdk/converter"
-	"go.temporal.io/sdk/internal/protocol"
 )
 
 func mustSetUpdateHandler(

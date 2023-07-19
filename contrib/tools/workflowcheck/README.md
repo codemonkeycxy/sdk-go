@@ -12,7 +12,7 @@ developers should still scrutinize Workflow code for other non-determinisms.**
 
 To install with [Go](https://golang.org/) installed and on the `PATH`, run:
 
-    go install go.temporal.io/sdk/contrib/tools/workflowcheck@latest
+    go install github.com/codemonkeycxy/sdk-go/contrib/tools/workflowcheck@latest
 
 Or you can simply build by running `go build` inside of this directory. 
 
@@ -49,8 +49,8 @@ import (
 	"fmt"
 	"time"
 
-	"go.temporal.io/sdk/worker"
-	"go.temporal.io/sdk/workflow"
+	"github.com/codemonkeycxy/sdk-go/worker"
+	"github.com/codemonkeycxy/sdk-go/workflow"
 )
 
 func Register(w worker.WorkflowRegistry) {
@@ -157,8 +157,8 @@ deterministic for common use:
   `sync.Map` (that does map iteration) as a cache of method layouts
 * `runtime.Caller` - Was considered non-deterministic because deep down in Go internal source, some `runtime` source
   starts a goroutine on lazy GC start when building CGo frames
-* `go.temporal.io/sdk/internal.propagateCancel` - Was considered non-deterministic because it starts a goroutine
-* `(*go.temporal.io/sdk/internal.cancelCtx).cancel` - Was considered non-deterministic because it iterates over a
+* `github.com/codemonkeycxy/sdk-go/internal.propagateCancel` - Was considered non-deterministic because it starts a goroutine
+* `(*github.com/codemonkeycxy/sdk-go/internal.cancelCtx).cancel` - Was considered non-deterministic because it iterates over a
   map
 
 ## Configuration

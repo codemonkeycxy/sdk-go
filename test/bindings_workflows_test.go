@@ -32,10 +32,10 @@ import (
 
 	commonpb "go.temporal.io/api/common/v1"
 
-	"go.temporal.io/sdk/converter"
-	"go.temporal.io/sdk/internal"
-	bindings "go.temporal.io/sdk/internalbindings"
-	"go.temporal.io/sdk/workflow"
+	"github.com/codemonkeycxy/sdk-go/converter"
+	"github.com/codemonkeycxy/sdk-go/internal"
+	bindings "github.com/codemonkeycxy/sdk-go/internalbindings"
+	"github.com/codemonkeycxy/sdk-go/workflow"
 )
 
 type EmptyWorkflowDefinitionFactory struct {

@@ -33,7 +33,7 @@ import (
 	commandpb "go.temporal.io/api/command/v1"
 	commonpb "go.temporal.io/api/common/v1"
 
-	"go.temporal.io/sdk/converter"
+	"github.com/codemonkeycxy/sdk-go/converter"
 )
 
 func Test_TimerStateMachine_CancelBeforeSent(t *testing.T) {

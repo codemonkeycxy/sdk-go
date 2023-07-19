@@ -1,4 +1,4 @@
-module go.temporal.io/sdk/contrib/tally
+module github.com/codemonkeycxy/sdk-go/contrib/tally
 
 go 1.16
 

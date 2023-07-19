@@ -26,13 +26,13 @@ import (
 	"context"
 	"testing"
 
+	"github.com/codemonkeycxy/sdk-go/converter"
 	"github.com/golang/mock/gomock"
 	"github.com/stretchr/testify/suite"
 	schedulepb "go.temporal.io/api/schedule/v1"
 	"go.temporal.io/api/serviceerror"
 	"go.temporal.io/api/workflowservice/v1"
 	"go.temporal.io/api/workflowservicemock/v1"
-	"go.temporal.io/sdk/converter"
 )
 
 const (

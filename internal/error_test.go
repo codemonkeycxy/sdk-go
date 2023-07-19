@@ -37,8 +37,8 @@ import (
 	failurepb "go.temporal.io/api/failure/v1"
 	historypb "go.temporal.io/api/history/v1"
 
-	"go.temporal.io/sdk/converter"
-	ilog "go.temporal.io/sdk/internal/log"
+	"github.com/codemonkeycxy/sdk-go/converter"
+	ilog "github.com/codemonkeycxy/sdk-go/internal/log"
 )
 
 const (

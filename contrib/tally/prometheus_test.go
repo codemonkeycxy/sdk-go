@@ -28,9 +28,9 @@ import (
 	"testing"
 	"time"
 
+	contribtally "github.com/codemonkeycxy/sdk-go/contrib/tally"
 	"github.com/stretchr/testify/require"
 	"github.com/uber-go/tally/v4"
-	contribtally "go.temporal.io/sdk/contrib/tally"
 )
 
 func TestPrometheusNaming(t *testing.T) {

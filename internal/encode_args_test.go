@@ -29,7 +29,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"go.temporal.io/sdk/converter"
+	"github.com/codemonkeycxy/sdk-go/converter"
 )
 
 func TestDecodeArg(t *testing.T) {

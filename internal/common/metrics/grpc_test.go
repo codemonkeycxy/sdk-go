@@ -28,8 +28,8 @@ import (
 	"testing"
 	"time"
 
+	"github.com/codemonkeycxy/sdk-go/internal/common/metrics"
 	"github.com/stretchr/testify/require"
-	"go.temporal.io/sdk/internal/common/metrics"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials/insecure"
 	"google.golang.org/grpc/health"

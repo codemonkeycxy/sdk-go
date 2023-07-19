@@ -40,8 +40,8 @@ import (
 	enumspb "go.temporal.io/api/enums/v1"
 	"go.uber.org/atomic"
 
-	"go.temporal.io/sdk/converter"
-	"go.temporal.io/sdk/internal/common/metrics"
+	"github.com/codemonkeycxy/sdk-go/converter"
+	"github.com/codemonkeycxy/sdk-go/internal/common/metrics"
 )
 
 const (

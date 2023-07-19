@@ -26,11 +26,11 @@ import (
 	"context"
 	"time"
 
+	"github.com/codemonkeycxy/sdk-go/converter"
+	"github.com/codemonkeycxy/sdk-go/internal/common/metrics"
+	"github.com/codemonkeycxy/sdk-go/log"
 	commonpb "go.temporal.io/api/common/v1"
 	updatepb "go.temporal.io/api/update/v1"
-	"go.temporal.io/sdk/converter"
-	"go.temporal.io/sdk/internal/common/metrics"
-	"go.temporal.io/sdk/log"
 )
 
 // Interceptor is a common interface for all interceptors. See documentation in

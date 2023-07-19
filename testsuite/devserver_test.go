@@ -26,10 +26,10 @@ import (
 	"context"
 	"testing"
 
+	"github.com/codemonkeycxy/sdk-go/client"
+	"github.com/codemonkeycxy/sdk-go/testsuite"
 	"github.com/stretchr/testify/require"
 	"go.temporal.io/api/workflowservice/v1"
-	"go.temporal.io/sdk/client"
-	"go.temporal.io/sdk/testsuite"
 )
 
 func TestStartDevServer_Defaults(t *testing.T) {

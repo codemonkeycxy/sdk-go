@@ -35,7 +35,7 @@ import (
 	historypb "go.temporal.io/api/history/v1"
 	"go.temporal.io/api/workflowservice/v1"
 
-	"go.temporal.io/sdk/client"
+	"github.com/codemonkeycxy/sdk-go/client"
 )
 
 func Test_MockClient(t *testing.T) {

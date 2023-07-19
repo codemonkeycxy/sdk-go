@@ -1,4 +1,4 @@
-module go.temporal.io/sdk/contrib/datadog
+module github.com/codemonkeycxy/sdk-go/contrib/datadog
 
 go 1.16
 

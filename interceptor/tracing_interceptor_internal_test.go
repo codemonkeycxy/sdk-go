@@ -29,7 +29,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"go.temporal.io/sdk/workflow"
+	"github.com/codemonkeycxy/sdk-go/workflow"
 )
 
 func TestIdempotencyKeyGeneration(t *testing.T) {

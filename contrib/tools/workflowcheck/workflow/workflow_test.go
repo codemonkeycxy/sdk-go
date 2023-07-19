@@ -25,7 +25,7 @@ package workflow_test
 import (
 	"testing"
 
-	"go.temporal.io/sdk/contrib/tools/workflowcheck/workflow"
+	"github.com/codemonkeycxy/sdk-go/contrib/tools/workflowcheck/workflow"
 	"golang.org/x/tools/go/analysis/analysistest"
 )
 

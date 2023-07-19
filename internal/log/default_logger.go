@@ -30,7 +30,7 @@ import (
 	"os"
 	"strings"
 
-	"go.temporal.io/sdk/log"
+	"github.com/codemonkeycxy/sdk-go/log"
 )
 
 // DefaultLogger is Logger implementation on top of standard log.Logger. It is used if logger is not specified.

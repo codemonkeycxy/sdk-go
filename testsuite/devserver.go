@@ -41,10 +41,10 @@ import (
 	"strings"
 	"time"
 
-	"go.temporal.io/sdk/client"
-	"go.temporal.io/sdk/internal"
-	ilog "go.temporal.io/sdk/internal/log"
-	"go.temporal.io/sdk/log"
+	"github.com/codemonkeycxy/sdk-go/client"
+	"github.com/codemonkeycxy/sdk-go/internal"
+	ilog "github.com/codemonkeycxy/sdk-go/internal/log"
+	"github.com/codemonkeycxy/sdk-go/log"
 )
 
 // Cached download of the dev server.

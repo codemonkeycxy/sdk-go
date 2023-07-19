@@ -23,8 +23,8 @@
 package temporal
 
 import (
-	"go.temporal.io/sdk/converter"
-	"go.temporal.io/sdk/internal"
+	"github.com/codemonkeycxy/sdk-go/converter"
+	"github.com/codemonkeycxy/sdk-go/internal"
 )
 
 type (
@@ -32,7 +32,7 @@ type (
 	DefaultFailureConverterOptions = internal.DefaultFailureConverterOptions
 
 	// DefaultFailureConverter seralizes errors with the option to encode common parameters under Failure.EncodedAttributes.
-	DefaultFailureConverter        = internal.DefaultFailureConverter
+	DefaultFailureConverter = internal.DefaultFailureConverter
 )
 
 // NewDefaultFailureConverter creates new instance of DefaultFailureConverter.

@@ -28,9 +28,9 @@ import (
 	"strconv"
 	"testing"
 
+	"github.com/codemonkeycxy/sdk-go/internal/protocol"
 	"github.com/stretchr/testify/require"
 	protocolpb "go.temporal.io/api/protocol/v1"
-	"go.temporal.io/sdk/internal/protocol"
 )
 
 type mockInstance struct {

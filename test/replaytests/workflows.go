@@ -30,10 +30,10 @@ import (
 	"math/rand"
 	"time"
 
+	"github.com/codemonkeycxy/sdk-go/activity"
+	"github.com/codemonkeycxy/sdk-go/temporal"
+	"github.com/codemonkeycxy/sdk-go/workflow"
 	"github.com/google/uuid"
-	"go.temporal.io/sdk/activity"
-	"go.temporal.io/sdk/temporal"
-	"go.temporal.io/sdk/workflow"
 )
 
 // Workflow1 test workflow

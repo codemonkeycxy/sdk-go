@@ -39,7 +39,7 @@ string parameter, appends a word to it and then returns the result.
 	import (
 		"context"
 
-		"go.temporal.io/sdk/activity"
+		"github.com/codemonkeycxy/sdk-go/activity"
 	)
 
 	func SimpleActivity(ctx context.Context, value string) (string, error) {

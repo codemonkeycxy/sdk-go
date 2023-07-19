@@ -30,7 +30,7 @@ import (
 	enumspb "go.temporal.io/api/enums/v1"
 	"go.temporal.io/api/serviceerror"
 
-	"go.temporal.io/sdk/internal"
+	"github.com/codemonkeycxy/sdk-go/internal"
 )
 
 /*

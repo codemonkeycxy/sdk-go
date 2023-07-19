@@ -30,7 +30,7 @@ import (
 	"github.com/stretchr/testify/assert"
 	commonpb "go.temporal.io/api/common/v1"
 
-	"go.temporal.io/sdk/converter"
+	"github.com/codemonkeycxy/sdk-go/converter"
 )
 
 func TestHeaderWriter(t *testing.T) {

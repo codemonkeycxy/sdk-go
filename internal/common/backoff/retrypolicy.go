@@ -29,7 +29,7 @@ import (
 	"math/rand"
 	"time"
 
-	"go.temporal.io/sdk/internal/common/retry"
+	"github.com/codemonkeycxy/sdk-go/internal/common/retry"
 )
 
 const (

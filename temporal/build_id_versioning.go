@@ -22,7 +22,7 @@
 
 package temporal
 
-import "go.temporal.io/sdk/internal"
+import "github.com/codemonkeycxy/sdk-go/internal"
 
 // VersioningIntent indicates whether the user intends certain commands to be run on
 // a compatible worker build ID version or not.

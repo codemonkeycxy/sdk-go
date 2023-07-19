@@ -1,4 +1,4 @@
-module go.temporal.io/sdk/contrib/opentracing
+module github.com/codemonkeycxy/sdk-go/contrib/opentracing
 
 go 1.16
 

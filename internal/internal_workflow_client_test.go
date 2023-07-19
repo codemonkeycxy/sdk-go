@@ -39,7 +39,7 @@ import (
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/connectivity"
 
-	ilog "go.temporal.io/sdk/internal/log"
+	ilog "github.com/codemonkeycxy/sdk-go/internal/log"
 
 	"github.com/golang/mock/gomock"
 	"github.com/stretchr/testify/require"
@@ -52,10 +52,10 @@ import (
 	"go.temporal.io/api/workflowservicemock/v1"
 	"google.golang.org/grpc/status"
 
-	"go.temporal.io/sdk/converter"
-	"go.temporal.io/sdk/internal/common/metrics"
-	"go.temporal.io/sdk/internal/common/serializer"
-	iconverter "go.temporal.io/sdk/internal/converter"
+	"github.com/codemonkeycxy/sdk-go/converter"
+	"github.com/codemonkeycxy/sdk-go/internal/common/metrics"
+	"github.com/codemonkeycxy/sdk-go/internal/common/serializer"
+	iconverter "github.com/codemonkeycxy/sdk-go/internal/converter"
 )
 
 const (
